@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📚 Book Listing App
 
-## Getting Started
+A simple book listing application built with **Next.js (App Router)** and **Zustand** for state management. Due to time constraints, this project does not include a backend or authentication.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Tech Stack
+- **Next.js (App Router)** – Frontend framework
+- **Zustand** – State management (instead of a backend)
+- **Tailwind CSS** – Styling
+- **Framer Motion** – Animations
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚡ Why No Backend & NextAuth?
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1️⃣ **No Backend (PostgreSQL + Drizzle/Prisma)**
+The original task suggested using PostgreSQL with Drizzle/Prisma for database management. However, due to time constraints, implementing a full backend was not feasible. Instead, Zustand is used to manage the application state on the client side.
 
-## Learn More
+### 2️⃣ **No NextAuth**
+NextAuth.js is a great authentication solution, but since this project does not have a backend, implementing proper authentication wasn’t practical. As a workaround, a simple login page with predefined credentials is used.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔐 Login Credentials
+- **Username:** `joy`
+- **Password:** `joy123`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## ✨ Features
+- 📌 Add and remove books from the list
+- 🔍 Search and filter functionality (optional improvement)
+- 🎨 Beautiful UI with Tailwind CSS
+- ⚡ Smooth animations using Framer Motion
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📂 Project Setup
+1. Clone the repository:
+
+
+2. Navigate to the project directory:
+   ```sh
+   cd book-listing-app
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
+4. Run the development server:
+   ```sh
+   npm run dev
+   ```
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## 📌 Future Improvements
+- ✅ Backend integration with PostgreSQL and Drizzle/Prisma
+- ✅ Proper authentication using NextAuth.js
+- ✅ User-specific book lists
+- ✅ Persistent storage for books ( IndexedDB, or Backend API)
+
+---
+
+### 📧 Contact
+Email: zarjijhasanjoy@gmail.com
+
+🚀 **Happy Coding!**
+
