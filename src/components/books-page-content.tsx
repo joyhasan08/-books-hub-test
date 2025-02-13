@@ -37,7 +37,7 @@ export default function BooksPageContent() {
           </button>
         </div>
       </div>
-      {books.length === 0 ? <p className="text-center text-lg mb-4">You haven't added any books yet.</p> : <BookList />}
+      {books.length === 0 ? <p className="text-center text-lg mb-4">You haven &#39;t added any books yet.</p> : <BookList />}
       {isAddingBook ? (
         <AddBookForm onClose={() => setIsAddingBook(false)} />
       ) : (

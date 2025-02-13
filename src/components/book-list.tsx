@@ -9,6 +9,13 @@ export default function BookList() {
   const [filter, setFilter] = useState("")
   const [sortBy, setSortBy] = useState("title")
 
+//   type books = {
+//     id: string
+//     title: string
+//     author: string
+//     genre: string
+//   }
+
   const filteredBooks = books
     .filter(
       (book) =>
@@ -16,7 +23,7 @@ export default function BookList() {
         book.author.toLowerCase().includes(filter.toLowerCase()) ||
         book.genre.toLowerCase().includes(filter.toLowerCase()),
     )
-    .sort((a, b) => a[sortBy].localeCompare(b[sortBy]))
+    .sort((a, b) => a[sortBy].localeCompare(b[sortBy] as string))
 
   return (
     <div className="space-y-4">
